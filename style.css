@@ -1,0 +1,17 @@
+body	{
+	background-color: gray;
+	color: black;
+}
+
+div.card {
+	width: 40%;
+	margin: 10px auto;
+}
+
+img {
+	widthi: 200px;
+}
+
+div{
+	border: solid;
+}

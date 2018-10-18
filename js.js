@@ -24,15 +24,25 @@ function main()	{
         
     ];
     
+    
+    for (let i = 0; i < log.length; i++) {
+        
     let $div = $("<div></div>").addClass("card");
 	let $table = $("<table></table>")
 		.append($("<tr></tr>")
-			.append($("<td></td>").text("journal: "))
+			.append($("<td></td>").text("Journal Entry: "))
 			.append($("<td></td>").text(log[i].journal))
-			.append($("<td></td>").text("date: "))
+			.append($("<td></td>").text("Date: "))
 			.append($("<td></td>").text(log[i].date))
-			.append($("<td></td>").text("time: "))
+			.append($("<td></td>").text("Time: "))
 			.append($("<td></td>").text(log[i].time))
 		)
     
+    $div.append( $("<h3></h3").text(log[i].name) )
+		.append( $("<img>").attr("src",log[i].img) )
+		.append( $( $table) )
+	
+	$("body").append( $div );
+    
+    }
 }
