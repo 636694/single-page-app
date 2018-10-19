@@ -30,7 +30,7 @@ function main()	{
     let $div = $("<div></div>").addClass("card");
 	let $table = $("<table></table>")
 		.append($("<tr></tr>")
-			.append($("<td></td>").text("Journal Entry: "))
+			.append($("<td></td>").text("    Entry: "))
 			.append($("<td></td>").text(log[i].journal))
 			.append($("<td></td>").text("Date: "))
 			.append($("<td></td>").text(log[i].date))
